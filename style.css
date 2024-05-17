@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+/* Root Variables */
+:root{
+    --color-primary:#7380ec;
+    --color-danger: #ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:#848bc82e;
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+	--color-primary1: #1c1d3b;
+	--color-primaryOne:#47498a;
+    --color-primary2: #89734c;
+    --color-text1: #333;
+    --color-white: #fff;
+    --color-footer: #111;
+
+    --card-border-radius:2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+    --box-shadow: 0 2rem 4rem var(--color-light);
+}
+
+
+
+*{
+font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background);
+}
+
+
+nav{
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul  li a{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.top{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.images{
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.nature, .tech , .food{
+ display: flex;
+ justify-content: last baseline;
+ align-items: last baseline;
+    
+    width: 15rem;
+    height: 19rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 2rem 0;
+    box-shadow: var(--box-shadow);
+}
+
+ .nature{
+    background-image: url(Images/nature-1.jpg);
+}
+
+
+.tech{
+    background-image: url(Images/tech-1.jpg);
+}
+
+.food{
+    background-image: url(Images/food-1.jpg);
+}
+
+.footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: brightness(87%);
+    background-color: #11111137;
+    border-radius: 0rem 2rem 0;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    text-shadow:1px #111;
+}
+
+
+.footer p{
+    font-size: 1rem;
+    color: #111;
+    background-color: var(--color-success);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: var(--border-radius-1);
+}
+
